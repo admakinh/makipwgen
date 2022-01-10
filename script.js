@@ -46,6 +46,8 @@ if (confSpec) {
 }
 // generates random string from pwOptions array
 if (goPass) {
+  document.body.style.fontFamily = "sans-serif";
+  document.querySelector("#generate").style.fontFamily = "sans-serif";
   generateString()
   function generateString(length) {
     var pwResult = ' ';
