@@ -18,18 +18,21 @@ function writePassword() {
     // determines password paramenters
     var confUp = window.confirm("SHOULD WE INCLUDE UPPERCASE CHARACTERS?");
     var confLow = window.confirm("how about lowercase?");
-    var confNumb = window.confirm("Numb3rs?");
-    var confSpec = window.confirm("Spice things up with some special characters?");
+    var confNumb = window.confirm("1NT3Rested 1n s0me Numb3rs?");
+    var confSpec = window.confirm("Spice things up with s*me special characters?");
     var confWing = window.confirm("Finally, how about some wing-dings?");
     if (confWing) {
       var wingPass = window.confirm("On second thought, maybe no wing dings...\nLet's generate that password!");
     } else {
       var goPass = window.confirm("Thanks, let's generate that password!");
     }
-  } else {
+  } else if (pwLength < 7 || pwLength > 129) {
     window.alert("Please enter a value between 8 and 128");
     writePassword()
 
+  } else {
+    window.alert("Try again when you're ready")
+    location.reload();
   }
 // creates pwOptions array
 if (confUp) {
@@ -58,7 +61,7 @@ if (goPass) {
     }
     document.querySelector("#password").textContent = pwResult;
   }
-  } else {
+  } else if (wingPass) {
     // wing dings...
     document.body.style.fontFamily = "wingdings";
     document.querySelector("#generate").style.fontFamily = "wingdings";
@@ -72,6 +75,8 @@ if (goPass) {
     }
     document.querySelector("#password").textContent = pwResult;
   }
+  } else {
+  location.reload();
   }
 }
 
