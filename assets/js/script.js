@@ -32,7 +32,7 @@ function writePassword() {
 
   } else {
     window.alert("Try again when you're ready")
-    location.reload();
+    // location.reload();
   }
 // creates pwOptions array
 if (confUp) {

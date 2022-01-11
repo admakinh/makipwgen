@@ -2,33 +2,31 @@
 Password Generator Javascript
 
 ## Description
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
 
-The goal of this project was to create a :
-- Using proper semantic HTML elements
-- Ensuring elements follow a logical structure
-- Including a descriptive title for the page
-- Clearly describing images using alt text
-- Adding ARIA roles and labels to identify elements of the page
 
-Building this project allowed for the opportunity to further research accessibilty standards in development. This allows for more people to have the full picture of what this website holds for information, thus allowing for more inclusive distribution. 
+The goal of this project was to create a password generator that has customizable charactersets and is randomly populated:
 
-I started by renaming the div classes to semantic HTML tags such as header, nav, main, etc. Next I added alt text to all the images offering information about what each image holds. I added aria labels and roles to important elements of the page. 
 
-After making changes to the HTML I included the background image in the HTML and added an alt tag so that it would be seen by a screen reader. This them required some adjusting in the CSS to ensure a proper positioning and aspect ratio. 
+This project gave the opportunity to combine multiple skills from this week's lesson. 
+-I started by creating different arrays for each possible charset
+-Next I created confirm windows to capture booleans for each variable 
+-I was originally going to create if/thens for each possible combo but realized that i would have to type the same thing with slight variation ~16 times to get the desired result 
+-I decided to create a new array which i would then push the desired contents to 
+-Finally I pulled together the info gathered from the user and used that to create my randomizer
+--I created a variable with an empty string for my generated password
+--I used a math.floor operation to generate a random character the number of times specified by the user and arrange those in a string
 
-Finally I simplified the CSS to avoid repeating syles.
+
 
 
 ## Credits
 Research for this project was done using various readily available resources some of which include:
-https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/main_role
-https://www.aditus.io/aria/aria-label/
-http://web-accessibility.carnegiemuseums.org/foundations/aria/
+https://www.programiz.com/javascript/examples/generate-random-strings
+https://stackoverflow.com/questions/4156101/copy-array-items-into-another-array
+https://www.w3schools.com/js/js_array_const.asp
+
+## Screenshot
+assets/MakiPWGenScreenshot.png
 
 ## License
                                  Apache License
